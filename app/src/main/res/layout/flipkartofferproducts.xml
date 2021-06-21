@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey1"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_search"
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/rounded_button_white"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Search  "
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/_7sdp"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <ImageView
+                    android:id="@+id/filter_imageview"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:src="@drawable/ic_search"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+
+
+                <GridView
+                    android:id="@+id/flipkartproductoffsers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="auto_fit"
+                    android:scrollbars="vertical"
+                    android:verticalSpacing="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

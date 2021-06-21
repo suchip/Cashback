@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mainlogo"></ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phoneimg"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:fontFamily="@font/montserratregular"
+                android:text="Enter Your Mobile Number TO Enjoy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Shopping Experience"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:fontFamily="@font/montserratregular"
+                android:text="Will send you one time password"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="(OTP)"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <EditText
+                android:id="@+id/mobilenumber_edittext"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Enter Mobile Number"
+                android:fontFamily="@font/montserratregular"
+                android:inputType="number"
+                android:maxLength="10"
+
+                android:maxLines="1"
+                android:textSize="@dimen/_12sdp">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="Send"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:background="@drawable/rounded_button_white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

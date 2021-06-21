@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_148sdp"
+    android:layout_height="@dimen/_150sdp"
+    android:elevation="10dp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:padding="@dimen/_5sdp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="@dimen/_148sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_margin="@dimen/_1sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_1sdp">
+
+
+        <ImageView
+            android:id="@+id/brandimage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:paddingRight="@dimen/_80sdp"
+            android:src="@drawable/ic_flipkart"></ImageView>
+
+
+        <!--                        <androidx.viewpager.widget.ViewPager-->
+        <!--                            android:id="@+id/shopsliderimages"-->
+        <!--                            android:layout_width="@dimen/_140sdp"-->
+        <!--                            android:layout_height="@dimen/_80sdp"-->
+        <!--                            android:layout_gravity="center"-->
+        <!--                            android:layout_marginTop="@dimen/_5sdp" />-->
+        <!--                        <com.viewpagerindicator.CirclePageIndicator-->
+        <!--                            android:id="@+id/shopcircleindicator"-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="@dimen/_10sdp"-->
+        <!--                            android:layout_marginTop="@dimen/_5sdp"-->
+        <!--                            android:layout_marginBottom="@dimen/_5sdp"-->
+        <!--                            android:gravity="bottom"-->
+        <!--                            app:centered="true"-->
+        <!--                            app:fillColor="@color/colorPrimary"-->
+        <!--                            app:pageColor="#fff"-->
+        <!--                            app:snap="false" >-->
+
+        <!--                        </com.viewpagerindicator.CirclePageIndicator>-->
+        <ImageView
+            android:id="@+id/home_productimage"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="visible">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/productname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="@font/montserratregular"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp">
+
+        </TextView>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

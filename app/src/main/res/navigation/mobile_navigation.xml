@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.cashback.ui.home.HomeFragmentAmazon"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home_amazon" />
+
+
+    <fragment
+        android:id="@+id/nav_amazon"
+        android:name="com.example.cashback.ui.home.HomeFragmentAmazon"
+        android:label="Amazon"
+        tools:layout="@layout/fragment_home_amazon" />
+
+
+    <fragment
+        android:id="@+id/nav_flipkart"
+        android:name="com.example.cashback.ui.home.HomeFragmentFlipkart"
+        android:label="Flipkart"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_snapdeal"
+        android:name="com.example.cashback.ui.home.HomeFragmentSnapdeal"
+        android:label="Snapdeal"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_productidetails"
+        android:name="com.example.cashback.ui.home.ProductDetail_Screen"
+        android:label="Product Detail"
+        tools:layout="@layout/productindetail_screen" />
+    <fragment
+        android:id="@+id/nav_amzonproductidetails"
+        android:name="com.example.cashback.ui.home.ProductInDetail_Amazon_Screen"
+        android:label="Product Detail"
+        tools:layout="@layout/productindetail_screen" />
+    <fragment
+        android:id="@+id/nav_compare"
+        android:name="com.example.cashback.ui.home.Compare_Screen"
+        android:label="Compare"
+        tools:layout="@layout/compare_product_adapter" />
+
+    <fragment
+        android:id="@+id/nav_checkout"
+        android:name="com.example.cashback.ui.home.Payment_Screen"
+        android:label="Check Out"
+        tools:layout="@layout/payment_screen" />
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.cashback.ui.home.Cart_Screen"
+        android:label="Cart"
+        tools:layout="@layout/cart_screen" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.cashback.ui.home.Profile_Screen"
+        android:label="Profile"
+        tools:layout="@layout/profile_screen" />
+</navigation>

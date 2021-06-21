@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "760760611153",
+    "project_id": "cashback-d2728",
+    "storage_bucket": "cashback-d2728.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760760611153:android:95ac9873d196a6134ce370",
+        "android_client_info": {
+          "package_name": "com.example.cashback"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760760611153-qtmrpkk3cjukcr2pqmg50g31l2o1o92h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cashback",
+            "certificate_hash": "37ac2d5be17828a32b904e9bd2bea375394bf5b8"
+          }
+        },
+        {
+          "client_id": "760760611153-qavjgnibajepp6ll7b9su9j2itdutjch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQf-rLVMcSV0IJFV0JSC0vCq7_oAK1Vws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760760611153-qavjgnibajepp6ll7b9su9j2itdutjch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

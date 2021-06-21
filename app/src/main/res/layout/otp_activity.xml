@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Verify Account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_28sdp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/phoneimg"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Mobile verification Has Successfully"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Done"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/mobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="We Have Sent The OTP On +918686061295 "
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <EditText
+                android:id="@+id/otpedittext1"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:hint="OTP"
+                android:textColorHint="@color/black"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/otp_button"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:backgroundTint="@color/white"
+                android:text="Verify"
+                android:textColor="@color/black"
+                app:background="@drawable/rounded_button_white">
+
+            </Button>
+            <TextView
+                android:id="@+id/resendcode"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Resend Code"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="@dimen/_16sdp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
