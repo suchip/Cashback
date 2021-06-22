@@ -437,6 +437,13 @@ class Home_Screen : AppCompatActivity(), NavigationView.OnNavigationItemSelected
                 true
             }
 
+            R.id.wishlist -> {
+                val navController =
+                    Navigation.findNavController(this, R.id.nav_host_fragment)
+                navController.navigate(R.id.nav_wishlist)
+                true
+            }
+
             else -> super.onOptionsItemSelected(item)
         }
     }

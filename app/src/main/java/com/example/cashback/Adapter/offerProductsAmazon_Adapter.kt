@@ -23,6 +23,7 @@ import com.example.cashback.models.Amazon.AmazonCashbackResponse
 import com.example.cashback.models.Amazon.AmazonResponse
 import com.example.cashback.roomdatabase.Cart
 import com.example.cashback.roomdatabase.CartDatabase
+import com.example.cashback.roomdatabase.CartSqlDatabase
 import com.google.gson.JsonSyntaxException
 import org.json.JSONException
 import retrofit2.Call
@@ -74,6 +75,8 @@ class offerProductsAmazon_Adapter(
 
 
             holder.brandimage = myView!!.findViewById<ImageView>(R.id.brandimage) as ImageView
+            holder.favorites_full =
+                myView.findViewById<ImageView>(R.id.favorites_full) as ImageView
             holder.favorites = myView.findViewById<ImageView>(R.id.favorites) as ImageView
             holder.productimage = myView.findViewById<ImageView>(R.id.productimage) as ImageView
             holder.productname = myView.findViewById<TextView>(R.id.productname) as TextView
@@ -356,6 +359,42 @@ class offerProductsAmazon_Adapter(
             } catch (e: NullPointerException) {
                 e.printStackTrace()
             }
+
+
+            holder.favorites!!.setOnClickListener {
+
+                holder.favorites!!.visibility = View.GONE
+                holder.favorites_full!!.visibility = View.VISIBLE
+
+                val dbHandler = CartSqlDatabase(context, null)
+
+                val id =
+                    arrayListImage.get(position).browse_node_info.browse_nodes[0].id
+//                                        cart.id = arrayListImage.get(position).asin.toInt()
+                val imageid =
+                    arrayListImage.get(position).images.primary.medium.url
+                val name =
+                    arrayListImage.get(position).browse_node_info.browse_nodes[0].context_free_name
+                val actualprice =
+                    arrayListImage.get(position).offers.listings[0].saving_basis.display_amount
+                val offerprice =
+                    arrayListImage.get(position).offers.listings[0].price.amount.toString()
+
+                dbHandler.addName(id, name, imageid, actualprice, offerprice)
+
+                Toast.makeText(
+                    context,
+                    arrayListImage.get(position).browse_node_info.browse_nodes[0].context_free_name + "Added to database",
+                    Toast.LENGTH_LONG
+                ).show()
+
+            }
+            holder.favorites_full!!.setOnClickListener {
+
+                holder.favorites!!.visibility = View.VISIBLE
+                holder.favorites_full!!.visibility = View.GONE
+
+            }
 //
 
         }
@@ -387,6 +426,7 @@ class offerProductsAmazon_Adapter(
 
         var brandimage: ImageView? = null
         var favorites: ImageView? = null
+        var favorites_full: ImageView? = null
         var productimage: ImageView? = null
         var productname: TextView? = null
         var offerprice: TextView? = null

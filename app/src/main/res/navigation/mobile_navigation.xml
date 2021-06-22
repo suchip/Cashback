@@ -60,6 +60,12 @@
         tools:layout="@layout/cart_screen" />
 
     <fragment
+        android:id="@+id/nav_wishlist"
+        android:name="com.example.cashback.ui.home.WishList_Screen"
+        android:label="WishList"
+        tools:layout="@layout/wishlist_screen" />
+
+    <fragment
         android:id="@+id/nav_profile"
         android:name="com.example.cashback.ui.home.Profile_Screen"
         android:label="Profile"
